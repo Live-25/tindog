@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+<!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- font awesome -->
+
+  <script src="https://kit.fontawesome.com/4d476870c9.js" crossorigin="anonymous"></script>
+
+  <script src="server.js"> </script>
+
+</head>
+
+<body class="contact-body">
+
+    <section id="title">
+        <div class="cointainer-fluid">
+        <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.ejs"> tindog </a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+      <div class="collapse navbar-collapse"  id="navbarTogglerDemo01"> 
+    
+      <ul class="navbar-nav  ms-auto" >
+        <li class="nav-item">
+          <a class="nav-link" href="contact.ejs"> Contact </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.ejs">Pricing </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dog-care.ejs"> Dog-care </a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+        </div>
+</section>
+
+
+   
+
+
+    <div class="contact-form">
+    <h1> CONTACT US  </h1>
+    <form >
+
+        <div class="mb-3">
+          <label for="exampleInputfirstname" class="form-label">FIRST NAME</label>
+          <input type="firstname" class="form-control" id="exampleInputfirstname">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputlastname" class="form-label"> LAST NAME </label>
+            <input type="lastname" class="form-control" id="exampleInputlastname">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputcontact" class="form-label"> CONTACT NO. </label>
+            <input type="contactno" class="form-control" id="exampleInputcontact">
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" style ="color: #979393; "class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" id="submit" class="btn btn-light btn-lg btn-form">Submit</button>
+      </form>
+        </div>
+        <script>
+          document.getElementById("submit").addEventListener("click", function(){
+            alert("Your query has been submitted!");
+          })
+        </script> 
+        
+</body>
+
+</html>
