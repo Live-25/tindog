@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "your-source-directory",
+        "use": "@vercel/node",
+        "timeout": 7200
+      }
+    ]
+  }
+  
